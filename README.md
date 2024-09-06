@@ -1,7 +1,6 @@
 # learn-cicd-starter (Notely)
 
-![code coverage badge]
-(https://github.com/Aleksandr-Rozhok/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
+![code coverage badge](https://github.com/Aleksandr-Rozhok/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 I study and practice CI/CD on this project
 
