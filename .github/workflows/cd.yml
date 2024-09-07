@@ -35,7 +35,7 @@ jobs:
           gcloud info
           gcloud builds submit --tag us-central1-docker.pkg.dev/notely-434814/notely-ar-repo/notely-app:latest .
           gcloud run deploy notely \
-            --image us-central1-docker.pkg.dev/notely-434814/notely-ar-repo/my-image:latest \
+            --image us-central1-docker.pkg.dev/notely-434814/notely-ar-repo/notely-app:latest \
             --region us-central1 \
             --allow-unauthenticated \
             --project notely-434814 \
