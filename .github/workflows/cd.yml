@@ -8,9 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
     steps:
       - name: Check out code
         uses: actions/checkout@v4
+
+      - name: Install Goose
+        run: |
+          GO111MODULE=on go get -u github.com/pressly/goose/v3
 
       - name: Set up Go
         uses: actions/setup-go@v5
